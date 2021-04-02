@@ -199,6 +199,7 @@ section.home {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .portfolio .item {
@@ -224,6 +225,7 @@ section.home {
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .portfolio .item:hover .action {
@@ -265,5 +267,9 @@ section.home {
 @media(max-width: 768px) {
     .services {
         grid-template-columns: 1fr;
+    }
+
+    .services .service {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 }
